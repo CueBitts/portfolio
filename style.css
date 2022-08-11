@@ -62,11 +62,11 @@ a:hover {
 
 @media (max-width: 800px) {
     .nav {
-        font-size: 27.5px;
+        font-size: 20px;
     }
 
     .nav-background {
-        height: 3.5rem;
+        height: 2.75rem;
     }
 }
 
@@ -107,11 +107,11 @@ a:hover {
     }
 
     #name {
-        font-size: 150px;
+        font-size: 100px;
     }
 
     #title {
-        font-size: 75px;
+        font-size: 50px;
     }
 }
 
@@ -238,8 +238,7 @@ li {
     }
 
     .skill-list {
-        font-size: 37.5px;
-        margin-left: 12.5px;
+        font-size: 32.5px;
     }
 }
 
@@ -250,10 +249,6 @@ li {
     font-family: 'Roboto';
     font-weight: 600;
 
-    display: flex;
-    
-    flex-direction: row;
-    flex-wrap: wrap;
     max-width: 1000px;
 
     margin-right: auto;
@@ -268,9 +263,17 @@ li {
     font-family: 'Josefin Sans', sans-serif;
     background: #ffff4f;
     border-radius: 12.5px;
-    max-width: 17.5rem;
-    position: absolute;
-    top: 2750px;
+    max-width: 30rem;
+    /* position: absolute;
+    top: 2750px; */
+}
+
+.projects {
+    justify-content: center;
+    display: flex;
+    
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .project {
@@ -327,15 +330,15 @@ li {
 
 @media (max-width: 800px) {
     #my-projects {
-        scroll-margin-top: 200px;
+        scroll-margin-top: 400px;
         margin-bottom: 100px;
-        justify-content: center;
     }
 
     #my-projects-title {
         font-size: 75px;
-        top: 4075px;
-        left: 12.5px;
+        /* top: 4075px;
+        left: 12.5px; */
+        position: relative;
     }
     
     .project {
@@ -344,6 +347,10 @@ li {
 
     .project p {
         font-size: 37.5px;
+    }
+
+    .project-text {
+        height: 0;
     }
 }
 

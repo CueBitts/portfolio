@@ -1,0 +1,375 @@
+html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+*, *:before *:after {
+    box-sizing: inherit;
+}
+
+body {
+    background: #feffff;
+}
+
+
+a {
+    color: #705ecc;
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+    text-decoration: underline;
+    background-color: #ffff4f;
+}
+
+
+.nav {
+    width: 98%;
+    position: fixed;
+    top: 25px;
+    
+    font-size: 17.5px;
+    
+    font-family: 'Josefin Sans', sans-serif;
+    border-bottom: 2.5px solid #705ecc;
+    
+    z-index: 300;
+}
+
+.nav-background {
+    width: 112.5%;
+    position: fixed;
+    height: 2.75rem;
+    top: 0;
+    left: -5px;
+    
+    background-color: #ffffff7d;
+    box-shadow: 0 5px 12.5px rgb(0 0 0 / 20%);
+    backdrop-filter: blur(12.5px);
+    background-blend-mode: overlay;
+    
+    z-index: 200;
+}
+
+#left {
+    float: left;
+}
+
+#right {
+    text-align: right;
+}
+
+@media (max-width: 800px) {
+    .nav {
+        font-size: 27.5px;
+    }
+
+    .nav-background {
+        height: 3.5rem;
+    }
+}
+
+
+#header {
+    scroll-margin-top: 1000px;
+
+    max-width: 500px;
+    padding: 0 auto;
+
+    font-family: 'Josefin Sans', sans-serif;
+    background: #ffff4f;
+    border-radius: 12.5px;
+
+    text-align: center;
+
+    margin-top: 250px;
+    margin-bottom: 500px;
+    margin-right: auto;
+    margin-left: auto;
+
+    /* background-image: url('./img/background.png'); */
+}
+
+#name {
+    font-size: 100px;
+}
+
+#title {
+    margin: -75px 0 150px;
+    
+    font-size: 50px;
+}
+
+@media (max-width: 800px) {
+    #header {
+        max-width: 750px;
+    }
+
+    #name {
+        font-size: 150px;
+    }
+
+    #title {
+        font-size: 75px;
+    }
+}
+
+
+#about-me {
+    scroll-margin-top: 250px;
+    
+    font-family: 'Roboto';
+    font-weight: 500;
+
+    display: flex;
+    max-width: 1000px;
+
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 500px;
+}
+
+.text-column {
+    flex: 66.66%;
+    margin: -37.5px 0 12.5px;
+
+    /* text-align: justify; */
+    font-size: 17.5px;
+}
+
+#about-me-title {
+    font-size: 50px;
+    font-family: 'Josefin Sans', sans-serif;
+    background: #ffff4f;
+    border-radius: 12.5px;
+    max-width: 15rem;
+}
+
+.img-column {
+    flex: 33.33%;
+    /* flex-flow: row nowrap;
+    align-items: center; */
+    /* flex-wrap: wrap; */
+    margin: 12.5px;
+
+    border-radius: 12.5px;
+    /* background-size: contain; */
+    object-fit: cover;
+    /* max-width: 100% */
+    min-width: 0;
+}
+
+
+@media (max-width: 800px) {
+    #about-me {
+        scroll-margin-top: 12.5px;
+        margin-bottom: 100px;
+    }
+
+    #about-me-title {
+        font-size: 75px;
+        max-width: 23rem;
+    }
+
+    .text-column {
+        font-size: 37.5px;
+    }
+
+    .img-column {
+        flex: 0;
+    }
+}
+
+
+#my-skills {
+    scroll-margin-top: 250px;
+    
+    font-family: 'Roboto';
+    font-weight: 500;
+
+    /* display: flex; */
+    max-width: 1000px;
+
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 500px;
+
+    text-align: left;
+}
+
+#my-skills-title {
+    font-size: 50px;
+    font-family: 'Josefin Sans', sans-serif;
+    background: #ffff4f;
+    border-radius: 12.5px;
+    max-width: 13.5rem;
+}
+
+.skill-list {
+    display: inline-block;
+    vertical-align: top;
+    /* background: red; */
+    font-size: 17.5px;
+    min-width: 33%;
+}
+
+.skill-title {
+    font-weight: 600;
+}
+
+ul {
+    list-style-type: "> ";
+    padding: 0 12.5px;
+}
+
+li {
+    padding-left: 0;
+}
+
+@media (max-width: 800px) {
+    #my-skills {
+        scroll-margin-top: 50px;
+    }
+
+    #my-skills-title {
+        font-size: 75px;
+        max-width: 20rem
+    }
+
+    .skill-list {
+        font-size: 37.5px;
+        margin-left: 12.5px;
+    }
+}
+
+
+#my-projects {
+    scroll-margin-top: 250px;
+
+    font-family: 'Roboto';
+    font-weight: 600;
+
+    display: flex;
+    
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1000px;
+
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 500px;
+
+    text-align: left;
+}
+
+#my-projects-title {
+    font-size: 50px;
+    font-family: 'Josefin Sans', sans-serif;
+    background: #ffff4f;
+    border-radius: 12.5px;
+    max-width: 17.5rem;
+    position: absolute;
+    top: 2750px;
+}
+
+.project {
+    flex: 47.5%;
+    margin-top: 125px;
+    margin: 5px;
+}
+
+.project-image {
+    max-width: 100%;
+    border-radius: 12.5px;
+    /* background-size: contain; */
+    object-fit: cover;
+    /* max-width: 100% */
+    min-width: 0;
+    /* border: 2.5px solid black; */
+    aspect-ratio: 1 / 1;
+    padding: -5px;
+    z-index: 0;
+}
+
+.project:hover .project-image {
+    transition: .25s ease;
+    /* background-color: #ffffff7d;
+    box-shadow: inset 0 5px 12.5px rgb(0 0 0 / 20%); */
+    filter: blur(12.5px) opacity(50%);
+    /* background-blend-mode: overlay; */
+}
+
+.project p {
+    font-size: 17.5px;
+    opacity: 0;
+}
+
+.project:hover p {
+    transition: .25s ease;
+    opacity: 1;
+}
+
+.project-text {
+    /* position: absolute; */
+    height: 12.5%;
+    text-align: center;
+    width: 100%;
+    z-index: 100;
+}
+
+.project-text:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+@media (max-width: 800px) {
+    #my-projects {
+        scroll-margin-top: 200px;
+        margin-bottom: 100px;
+        justify-content: center;
+    }
+
+    #my-projects-title {
+        font-size: 75px;
+        top: 4075px;
+        left: 12.5px;
+    }
+    
+    .project {
+        flex: 100%;
+    }
+
+    .project p {
+        font-size: 37.5px;
+    }
+}
+
+
+#contact-me {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 25px;
+    
+    display: table;
+    width: 97%;
+    table-layout: fixed;
+
+    position: absolute;
+
+    padding: 25px;
+
+    background-color: #705ecc;
+}
+
+#contact-me a{
+    display: table-cell;
+    text-align: center;
+    color: white;
+}
+
+#contact-me a:hover {
+    text-decoration: underline;
+    background-color: #705ecc;
+}

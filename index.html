@@ -1,21 +1,167 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Quinlan Hogan - Portfolio</title>
     <meta charset="UTF-8">
-  <meta name="description" content="add a description">
-  <meta name="keywords" content="keywords, such as coding languages you know">
-  <meta name="author" content="Your Name">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="css/main.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,600&family=Roboto&display=swap" rel="stylesheet">
+    <title>Quinlan Hogan | Full-stack Developer</title>
 </head>
 <body>
-  <h1 class="text-center">Hello World!</h1>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <div class="nav-background"></div>
+    <div class="nav">
+        <div id="left">    
+            <a href="#header">QH</a>
+        </div>
 
+        <div id="right">
+            <a href="#about-me">About Me</a> |
+            <a href="#my-skills">My Skills</a> |
+            <a href="#my-projects">My Projects</a> |
+            <a href="#contact-me">Contact Me</a>
+        </div>
+    </div>
+
+    <div class="scroll-container">    
+        <div class="scroll-page" id="header">
+            <p id="name">Quinlan Hogan</p>
+            <p id="title">Full-stack Software Developer</p>
+        </div>
+
+        <div class="scroll-page" id="about-me">
+            <div class="text-column">    
+                <div id="about-me-title">
+                    <p>About Me:</p>
+                </div>
+                
+                <p>Hi! My name is Quinlan, and I'm a full-stack software developer.</p>
+
+                <p>I got into coding to combine my passions for creativity and problem-solving, and my abilities for critical thinking and attention to detail, into a robust set of <a href="#my-skills">skills</a>. I love returning elegant solutions and <a href="#my-projects">refined products</a>.
+                </p>
+                
+                <p>I am a graduate of the General Assembly <a href="https://generalassemb.ly/education/software-engineering-immersive-remote-flex" target="_blank">Software Engineering Immersive</a>, where I learned many of the most relevant programming languages, frameworks, and tools in the industry. React and Express are just a few of my <a href="#my-skills">skills</a> that I'm most proficient in.
+                </p>
+
+                <p>When I'm not coding I'm probably cooking, playing video games, or spending time with my cats. Want to know more? <a href="#">Contact me</a>.
+                </p>
+            </div>
+
+            <img class="img-column" src="./img/profile_photo.png" alt="">
+        </div>
+
+        <div class="scroll-page" id="my-skills">
+            <p id="my-skills-title">My Skills:</p>
+            
+            <div class="skill-list">    
+                <p class="skill-title">Languages:</p>
+                <ul class="languages">
+                    <li>JavaScript</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Python</li>
+                </ul>
+            </div>
+
+            <div class="skill-list">  
+                <p class="skill-title">Frameworks:</p>
+                <ul class="frameworks">
+                    <li>Node.js</li>
+                    <li>React.js</li>
+                    <li>Express.js</li>
+                    <li>Django</li>
+                    <li>Django REST Framework</li>
+                </ul>
+            </div>
+            
+            <div class="skill-list">
+                <p class="skill-title">Database:</p>
+                <ul class="database">
+                    <li>Mongoose</li>
+                    <li>MongoDB</li>
+                    <li>SQL</li>
+                    <li>PostgreSQL</li>
+                </ul>
+            </div>
+            
+            <div class="skill-list">
+                <p class="skill-title">Version Control:</p>
+                <ul class="version-control">
+                    <li>Git</li>
+                    <li>GitHub</li>
+                    <li>Git Bash</li>
+                </ul>
+            </div>
+
+            <div class="skill-list">
+                <p class="skill-title">Deployment:</p>
+                <ul class="deployment">
+                    <li>Heroku</li>
+                    <li>Netlify</li>
+                    <li>GitHub Pages</li>
+                </ul>
+            </div>
+            
+            <div class="skill-list">
+                <p class="skill-title">Other:</p>
+                <ul class="other">
+                    <li>Fetch</li>
+                    <li>Axios</li>
+                    <li>CSS Flexbox</li>
+                    <li>CSS Grid</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="scroll-page" id="my-projects">
+            <p id="my-projects-title">My Projects:</p>
+            
+            <div class="project" id="recast">
+                <div class="project-text">    
+                    <p>ReCast</p>
+                    <p>React | Django REST Framework | PostgreSQL</p>
+                    <p><a href="https://github.com/CueBitts/ReCast" target="_blank">GitHub Repo</a> | <a href="https://recastfe.herokuapp.com" target="_blank">Deployed Site</a></p>
+                </div>
+                <img src="./img/proj4_screenshot.png" alt="" class="project-image">
+            </div>
+
+            <div class="project" id="spacebar">
+                <div class="project-text">
+                    <p>SpaceBar</p>
+                    <p>React | Express | MongoDB</p>
+                    <p><a href="https://github.com/CueBitts/social-media-app-frontend" target="_blank">GitHub Repo</a> | <a href="https://spacebar-g6.herokuapp.com" target="_blank">Deployed Site</a></p>
+                </div>
+                <img src="./img/proj3_screenshot.png" alt="" class="project-image">
+            </div>
+
+            <div class="project" id="post-mates">
+                <div class="project-text">
+                    <p>POST-mates</p>
+                    <p>Node | Express | MongoDB</p>
+                    <p><a href="https://github.com/CueBitts/project-2" target="_blank">GitHub Repo</a> | <a href="https://polar-bayou-46444.herokuapp.com" target="_blank">Deployed Site</a></p>
+                </div>
+                <img src="./img/proj2_screenshot.png" alt="" class="project-image">
+            </div>
+
+            <div class="project" id="dots-and-boxes">
+                <div class="project-text">
+                    <p>Dots and Boxes</p>
+                    <p>JavaScript | HTML | CSS</p>
+                    <p><a href="https://github.com/CueBitts/CueBitts.github.io" target="_blank">GitHub Repo</a> | <a href="https://cuebitts.github.io" target="_blank">Deployed Site</a></p>
+                </div>
+                <img src="./img/proj1_screenshot.png" alt="" class="project-image">
+            </div>
+        </div>
+
+        <span class="scroll-page" id="contact-me">
+            <a href="https://github.com/CueBitts" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/quinlan-hogan/" target="_blank">LinkedIn</a>
+            <a href="mailto:quinlanhogan@gmail.com">Email</a>
+            <a href="./files/Quinlan Hogan_resume.pdf" download>Resume</a>
+        </span>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
